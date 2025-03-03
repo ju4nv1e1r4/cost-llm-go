@@ -7,13 +7,27 @@ import (
 )
 
 func main()  {
+	fmt.Println("=======")
+	fmt.Println("LLM Cost of Trainning and Inputs")
+	fmt.Println("=======")
+	fmt.Print("Qual o nome do seu modelo?\n")
+	var text string
+	fmt.Scanln(&text)
+	fmt.Printf("Modelo => %s", text)
+
+	fmt.Println("\n---------")
+	fmt.Print("Digite um prompt:\n")
+	var input string
+	fmt.Scan(&input)
+	fmt.Printf("Prompt => %s\n", input)
+
 	fineTuningData, err := os.ReadFile("data.txt")
 	if err != nil {
 		panic(err)
 	}
 	
-	trainningCost := app.CalcTrainning("gpt-3.5-turbo", string(fineTuningData))
-	inputCost := app.CalcInput("gpt-3.5-turbo", "Qual a sua função?")
+	trainningCost := app.CalcTrainning(text, string(fineTuningData))
+	inputCost := app.CalcInput(text, input)
 
 	fmt.Printf("=> O custo do treinamento deste modelo é USD %f.\n", trainningCost)
 	fmt.Printf("=> O custo do prompt deste modelo é USD %f.", inputCost)
