@@ -18,6 +18,7 @@ func Count(words string) int {
 
 	token := tke.Encode(text, nil, nil)
 	nOfTokens := len(token)
+	fmt.Println("O número de tokens é: ", nOfTokens)
 	return nOfTokens
 }
 func CalcTrainning(model string, input string) float64 {
@@ -30,13 +31,13 @@ func CalcTrainning(model string, input string) float64 {
 	gpt4o20240806 := 25 / 1_000_000.0
 	
 	if model == "gpt-3.5-turbo" {
-		fineTuningCost = float64(nOfTokens) ** &gpt35turbo
+		fineTuningCost = float64(nOfTokens) * float64(gpt35turbo)
 	} else if model == "gpt-4o-mini-2024-07-18" {
-		fineTuningCost = float64(nOfTokens) ** &gpt4omini20240718
+		fineTuningCost = float64(nOfTokens) * float64(gpt4omini20240718)
 	} else if model == "gpt-4o-2024-08-06" {
-		fineTuningCost = float64(nOfTokens) ** &gpt4o20240806
+		fineTuningCost = float64(nOfTokens) * float64(gpt4o20240806)
 	} else {
-		fmt.Println("O modelo não está na lista de custos.")
+		fmt.Println("-> O modelo não está na lista de custos. <-")
 	}
 
 	return fineTuningCost
@@ -52,13 +53,13 @@ func CalcInput(model string, input string) float64 {
 	gpt4o20240806 := 3.75 / 1_000_000.0
 	
 	if model == "gpt-3.5-turbo" {
-		inputCost = float64(nOfTokens) ** &gpt35turbo
+		inputCost = float64(nOfTokens) * float64(gpt35turbo)
 	} else if model == "gpt-4o-mini-2024-07-18" {
-		inputCost = float64(nOfTokens) ** &gpt4omini20240718
+		inputCost = float64(nOfTokens) * float64(gpt4omini20240718)
 	} else if model == "gpt-4o-2024-08-06" {
-		inputCost = float64(nOfTokens) ** &gpt4o20240806
+		inputCost = float64(nOfTokens) * float64(gpt4o20240806)
 	} else {
-		fmt.Println("O modelo não está na lista de custos.")
+		fmt.Println("-> O modelo não está na lista de custos. <-")
 	}
 
 	return inputCost
