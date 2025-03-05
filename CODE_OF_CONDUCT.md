@@ -2,7 +2,7 @@
 
 ## 1️⃣. Our Mission
 
-**Cost LLM** is an open source project for the **LLMOps/AIOps** community, helping to estimate the costs of training and inferring language models. To ensure a welcoming and productive environment, we have established this **Code of Conduct**.
+**Cost LLM** is an open source project for the **MLOps/AIOps** community, helping to estimate the costs of training and inferring language models. To ensure a welcoming and productive environment, we have established this **Code of Conduct**.
 
 ## 2️⃣. Commitments
 
@@ -47,7 +47,7 @@ The idea of ​​this code is to maintain a positive environment and ensure tha
 
 ## 1️⃣. Nossa Missão
 
-O **Cost LLM** é um projeto de código aberto voltado para a comunidade **LLMOps/AIOps**, ajudando a estimar custos de treinamento e inferência de modelos de linguagem. Para garantir um ambiente acolhedor e produtivo, estabelecemos este **Código de Conduta**.
+O **Cost LLM** é um projeto de código aberto voltado para a comunidade **MLOps/AIOps**, ajudando a estimar custos de treinamento e inferência de modelos de linguagem. Para garantir um ambiente acolhedor e produtivo, estabelecemos este **Código de Conduta**.
 
 ## 2️⃣. Compromissos
 

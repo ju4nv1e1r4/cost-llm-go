@@ -1,6 +1,6 @@
 ### 📜 Contributing to Cost LLM
 
-Thank you for considering contributing to **Cost LLM**! This project aims to help the **LLMOps/AIOps** community estimate inference and training costs for **LLMs**.
+Thank you for considering contributing to **Cost LLM**! This project aims to help the **MLOps/AIOps** community estimate inference and training costs for **LLMs**.
 
 Before you begin, please follow the guidelines below to ensure your contribution is accepted and benefits everyone.
 
@@ -101,7 +101,7 @@ If you have any questions, please open an **issue** or contact me. 💡
 
 ### 📜 Contribuindo para o Cost LLM
 
-Obrigado por considerar contribuir para o **Cost LLM**! Este projeto visa ajudar a comunidade **LLMOps/AIOps** a estimar os custos de inferência e treinamento para **LLMs**.
+Obrigado por considerar contribuir para o **Cost LLM**! Este projeto visa ajudar a comunidade **MLOps/AIOps** a estimar os custos de inferência e treinamento para **LLMs**.
 
 Antes de começar, siga as diretrizes abaixo para garantir que sua contribuição seja aceita e beneficie a todos.
 

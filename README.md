@@ -2,7 +2,7 @@
 
 ## Overview
 
-CostLLM is a Go package designed to calculate the cost of fine-tuning and inferencing language models (LLMs) based on the number of tokens processed. This package is useful for **LLMOps** and **AIOps** routines and recommended for professionals who want to estimate the operational costs of their models before execution.
+CostLLM is a Go package designed to calculate the cost of fine-tuning and inferencing language models (LLMs) based on the number of tokens processed. This package is useful for **MLOps** and **AIOps** routines and recommended for professionals who want to estimate the operational costs of their models before execution.
 
 With **CostLLM**, you can:
 - Calculate the cost of training (fine-tuning) a model based on the number of input tokens.
@@ -100,7 +100,7 @@ fmt.Println("Inference Cost:", cost)
 ```
 ## Integration with Other Projects
 
-**LLM Cost** can be easily integrated into any Go project that needs to estimate LLM costs. This is especially useful for **LLMOps** and **AIOps** engineers, as it allows for better cost management when running models in production.
+**LLM Cost** can be easily integrated into any Go project that needs to estimate LLM costs. This is especially useful for **MLOps** and **AIOps** engineers, as it allows for better cost management when running models in production.
 
 If you want to monitor expenses, you can add logs or store the estimated costs in a database for financial control of inference and training.
 
@@ -158,7 +158,7 @@ For questions or collaborations:
 
 ## Visão Geral
 
-CostLLM é um pacote em Go projetado para calcular o custo de fine-tuning e inferência de modelos de linguagem (LLMs) baseando-se no número de tokens processados. Este pacote é útil para rotinas de **LLMOps** e **AIOps**  e recomendado para profissionais que desejam estimar os custos operacionais de seus modelos antes da execução.
+CostLLM é um pacote em Go projetado para calcular o custo de fine-tuning e inferência de modelos de linguagem (LLMs) baseando-se no número de tokens processados. Este pacote é útil para rotinas de **MLOps** e **AIOps**  e recomendado para profissionais que desejam estimar os custos operacionais de seus modelos antes da execução.
 
 Com **CostLLM**, você pode:
 - Calcular o custo de treinamento (fine-tuning) de um modelo com base no número de tokens de entrada.
@@ -264,7 +264,7 @@ func main() {
 
 ## Integração com Outros Projetos
 
-**LLM Cost** pode ser integrado facilmente em qualquer projeto Go que precise estimar custos de LLMs. Isso é especialmente útil para engenheiros de **LLMOps** e **AIOps**, pois permite um melhor gerenciamento de custos na execução de modelos em produção.
+**LLM Cost** pode ser integrado facilmente em qualquer projeto Go que precise estimar custos de LLMs. Isso é especialmente útil para engenheiros de **MLOps** e **AIOps**, pois permite um melhor gerenciamento de custos na execução de modelos em produção.
 
 Se você deseja monitorar gastos, você pode adicionar logs ou armazenar os custos estimados em um banco de dados para controle financeiro de inferência e treinamento.
 
