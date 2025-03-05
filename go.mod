@@ -1,4 +1,4 @@
-module llmcosts
+module llmcoststool
 
 go 1.24.0
 

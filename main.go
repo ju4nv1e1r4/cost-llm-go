@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"llmcosts/llmcost"
+	"llmcoststool/llmcost"
 	"os"
 )
 
