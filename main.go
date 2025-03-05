@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	"llmcost/app"
 	"os"
-
-	"github.com/ju4nv1e1r4/cost-llm-go/app"
 )
 
 func main()  {

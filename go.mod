@@ -1,4 +1,4 @@
-module github.com/ju4nv1e1r4/cost-llm-go
+module llmcost
 
 go 1.24.0
 
