@@ -18,7 +18,7 @@ func main()  {
 	fmt.Println("\n---------")
 	fmt.Print("Digite um prompt:\n")
 	var input string
-	fmt.Scan(&input)
+	fmt.Scanln(&input)
 	fmt.Printf("Prompt => %s\n", input)
 
 	fineTuningData, err := os.ReadFile("data.txt")

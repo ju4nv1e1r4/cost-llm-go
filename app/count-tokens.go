@@ -21,6 +21,7 @@ func Count(words string) int {
 	fmt.Println("O número de tokens é: ", nOfTokens)
 	return nOfTokens
 }
+
 func CalcTrainning(model string, input string) float64 {
 	var fineTuningCost float64
 
