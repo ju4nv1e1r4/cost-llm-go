@@ -1,4 +1,4 @@
-package llmcost
+package cost
 
 import (
 	"fmt"
