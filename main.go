@@ -20,5 +20,6 @@ func main()  {
 		panic(err)
 	}
 
-    app.CalcTrainning(text, string(fineTuningData))
+    trainningCost := app.CalcTrainning(text, string(fineTuningData))
+    fmt.Printf("=> O custo do treinamento deste modelo é USD %f.\n", trainningCost)
 }
