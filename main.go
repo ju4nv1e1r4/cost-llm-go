@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"llmcoststool/cost"
+	"github.com/ju4nv1e1r4/cost-llm-go/cost"
 	"os"
 )
 
