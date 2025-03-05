@@ -2,8 +2,9 @@ module github.com/ju4nv1e1r4/cost-llm-go
 
 go 1.24.0
 
+require github.com/pkoukk/tiktoken-go v0.1.7
+
 require (
 	github.com/dlclark/regexp2 v1.10.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/pkoukk/tiktoken-go v0.1.7 // indirect
 )
