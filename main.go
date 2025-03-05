@@ -15,11 +15,10 @@ func main()  {
 	var text string
 	fmt.Scanln(&text)
 	fmt.Printf("Modelo => %s", text)
-    fineTuningData, err := os.ReadFile("data.txt")
+    fineTuningData, err := os.ReadFile("data.txt") // seu arquivo aqui
     if err != nil {
 		panic(err)
 	}
 
-    trainningCost :=  cost.CalcTrainning(text, string(fineTuningData))
-    fmt.Printf("=> O custo do treinamento deste modelo é USD %f.\n", trainningCost)
+    cost.CalcTrainning(text, string(fineTuningData))
 }
