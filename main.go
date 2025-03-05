@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"llmcost/app"
+	"llmcosts/llmcost"
 	"os"
 )
 
@@ -20,6 +20,6 @@ func main()  {
 		panic(err)
 	}
 
-    trainningCost := app.CalcTrainning(text, string(fineTuningData))
+    trainningCost := llmcost.CalcTrainning(text, string(fineTuningData))
     fmt.Printf("=> O custo do treinamento deste modelo é USD %f.\n", trainningCost)
 }
