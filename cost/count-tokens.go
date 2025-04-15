@@ -23,9 +23,9 @@ import (
 	"github.com/pkoukk/tiktoken-go"
 )
 
-// Count recebe um texto como entrada e retorna o número de tokens gerados usando a codificação "cl100k_base".
-// Ele utiliza a biblioteca tiktoken para tokenização.
-// Se ocorrer um erro ao obter a codificação, o programa encerrará com um log.Fatal.
+// Count takes a text as input and returns the number of tokens generated using the "cl100k_base" encoding.
+// It uses the tiktoken library for tokenization.
+// If an error occurs while getting the encoding, the program will exit with a log.Fatal.
 func Count(words string) int {
 	text := words
 	encoding := "cl100k_base" // A maioria dos modelos usa este encoder
@@ -42,10 +42,10 @@ func Count(words string) int {
 	return nOfTokens // devemos retornar um inteiro, pois servirá no cálculo em outras funções
 }
 
-// CalcTrainning estima o custo de fine-tuning de um modelo específico com base no número de tokens do input.
-// Ele recebe o nome do modelo e o texto de entrada, calcula o número de tokens e aplica a taxa de fine-tuning correspondente.
-// Se o modelo não estiver na lista de custos, uma mensagem de aviso é exibida.
-// Retorna o custo formatado como uma string em dólares.
+// CalcTrainning estimates the cost of fine-tuning a specific model based on the number of tokens in the input.
+// It takes the model name and input text, calculates the number of tokens, and applies the corresponding fine-tuning fee.
+// If the model is not in the list of costs, a warning message is displayed.
+// Returns the cost formatted as a string in dollars.
 func CalcTrainning(model string, input string) string {
 	var fineTuningCost float64
 
@@ -70,10 +70,10 @@ func CalcTrainning(model string, input string) string {
 	return resultOf
 }
 
-// CalcInput estima o custo de processamento de entrada para um modelo específico com base no número de tokens do input.
-// Ele recebe o nome do modelo e o texto de entrada, calcula os tokens e aplica a taxa correspondente para processamento de entrada.
-// Se o modelo não estiver na lista de custos, uma mensagem de aviso é exibida.
-// Retorna o custo formatado como uma string em dólares.
+// CalcInput estimates the input processing cost for a specific model based on the number of tokens in the input.
+// It takes the model name and input text, calculates the tokens, and applies the corresponding fee for input processing.
+// If the model is not in the cost list, a warning message is displayed.
+// Returns the cost formatted as a string in dollars.
 func CalcInput(model string, input string) string {
 	var inputCost float64
 
