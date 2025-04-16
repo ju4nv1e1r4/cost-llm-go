@@ -38,7 +38,7 @@ func Count(words string) int {
 	token := tke.Encode(text, nil, nil)
 	nOfTokens := len(token)
 	
-	fmt.Println("O número de tokens é: ", nOfTokens)
+	fmt.Println("The number of tokens generated is: ", nOfTokens)
 	return nOfTokens // devemos retornar um inteiro, pois servirá no cálculo em outras funções
 }
 
@@ -51,7 +51,10 @@ func CalcTrainning(model string, input string) string {
 
 	nOfTokens := Count(input)
 
-	// preços
+	// prices
+	// gpt-3.5-turbo: $8.00 per million tokens
+	// gpt-4o-mini-2024-07-18: $3.00 per million tokens
+	// gpt-4o-2024-08-06: $25.00 per million tokens
 	gpt35turbo := 8.0 / 1_000_000.0
 	gpt4omini20240718 := 3 / 1_000_000.0
 	gpt4o20240806 := 25 / 1_000_000.0
@@ -63,7 +66,7 @@ func CalcTrainning(model string, input string) string {
 	} else if model == "gpt-4o-2024-08-06" {
 		fineTuningCost = float64(nOfTokens) * float64(gpt4o20240806)
 	} else {
-		fmt.Println("-> O modelo não está na lista de custos. <-")
+		fmt.Println("This model is not in the cost list.")
 	}
 
 	resultOf := fmt.Sprintf("USD: %f", fineTuningCost)
@@ -79,7 +82,10 @@ func CalcInput(model string, input string) string {
 
 	nOfTokens := Count(input)
 
-	// preços
+	// prices
+	// gpt-3.5-turbo: $0.003 per 1k tokens
+	// gpt-4o-mini-2024-07-18: $0.0003 per 1k tokens
+	// gpt-4o-2024-08-06: $0.00375 per 1k tokens
 	gpt35turbo := 3.0 / 1_000_000.0
 	gpt4omini20240718 := 0.3 / 1_000_000.0
 	gpt4o20240806 := 3.75 / 1_000_000.0
@@ -91,7 +97,7 @@ func CalcInput(model string, input string) string {
 	} else if model == "gpt-4o-2024-08-06" {
 		inputCost = float64(nOfTokens) * float64(gpt4o20240806)
 	} else {
-		fmt.Println("-> O modelo não está na lista de custos. <-")
+		fmt.Println("This model is not in the cost list.")
 	}
 
 	resultOf := fmt.Sprintf("USD: %f", inputCost)
