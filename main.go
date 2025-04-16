@@ -27,4 +27,5 @@ func main()  {
 	}
 
     cost.CalcTrainning(text, string(fineTuningData))
+	cost.CalcInput(text, string(fineTuningData))
 }
