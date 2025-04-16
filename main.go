@@ -11,11 +11,17 @@ func main()  {
 	fmt.Println("LLM Cost of Trainning and Inputs")
 	fmt.Println("=======")
 
-	fmt.Print("Qual o nome do seu modelo?\n")
+	fmt.Print("What model are you using?\n")
 	var text string
-	fmt.Scanln(&text)
-	fmt.Printf("Modelo => %s", text)
-    fineTuningData, err := os.ReadFile("data.txt") // seu arquivo aqui
+	scanText, err := fmt.Scanln(&text)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Printf("Model => %s", text)
+	fmt.Println("=======")
+	_ = scanText
+    fineTuningData, err := os.ReadFile("data.txt") // your file path here
     if err != nil {
 		panic(err)
 	}
